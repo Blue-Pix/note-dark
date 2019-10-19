@@ -1,0 +1,1637 @@
+:root {
+  /** Twitter Dark */
+  --bg-color: #000000;
+  --sub-bg-color: #15181C;
+  --text-color: #D9D9D9;
+  --sub-text-color: #6E767D;
+  --like-color: rgb(234,63,96);
+  --main-color: rgb(44,182,150);
+  --main-color-dark: #228d74;
+  
+  /** Twitter DarkBlue */
+  --bg-color: #15202B;
+  --sub-bg-color: #192734;
+  --text-color: #FFFFFF;
+  --sub-text-color: #8899A6;
+  --gray : #c1cfd9;
+  --blue-gray: #5a7488;
+}
+
+html
+body {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+.o-navBar {
+  background: var(--bg-color) !important;
+}
+
+button.a-button,
+a.a-button {
+  background: var(--bg-color) !important;
+  border:1px solid var(--sub-text-color) !important;
+  color: var(--text-color) !important;
+}
+button.a-button:hover,
+a.a-button:hover {
+  border:1px solid var(--gray) !important;
+}
+button.a-button[data-type="primary"] {
+  background: var(--bg-color) !important;
+  border: 1px solid var(--main-color) !important;
+  color: var(--main-color) !important;
+}
+button.a-button[data-type="primary"]:hover {
+  border: 1px solid var(--main-color-dark) !important;
+  color: var(--main-color-dark);
+}
+button.a-button[data-type="secondary"] {
+  border: 1px solid var(--main-color) !important;
+  color: var(--main-color) !important;
+}
+button.a-button[data-type="secondary"]:hover {
+  border: 1px solid var(--main-color-dark) !important;
+  color: var(--main-color-dark) !important;
+}
+
+
+.a-input,
+.a-textarea {
+  background: var(--sub-bg-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+  color: var(--text-color) !important;
+}
+.a-textarea::placeholder {
+  color: var(--sub-text-color) !important;
+}
+
+.m-siteLogo__image {
+  background: var(--bg-color) !important;
+}
+
+.o-navBar {
+  border-bottom: 1px solid var(--sub-text-color) !important;
+}
+.o-navbarMenu__category {
+  border-top: 1px solid var(--sub-text-color) !important;
+}
+/** 選択中以外 */
+.a-navItem {
+  color: var(--sub-text-color);
+}
+/** ホバー時は選択中と同じになる */
+.a-navItem:hover > .a-navItem__item {
+  color: var(--text-color) !important;
+}
+.a-navItem:hover > .a-navItem__item:before {
+  background: var(--text-color) !important;
+}
+/** 選択中 */
+.a-navItem .is-active {
+  color: var(--text-color) !important;
+}
+.a-navItem .is-active:before {
+  background: var(--text-color) !important;
+}
+.m-submenu__item {
+  color: var(--sub-text-color);
+}
+.m-submenu__item > .m-submenu__link:hover {
+  color: var(--text-color);
+}
+.m-submenu__item > .m-submenu__link.active {
+  color: var(--text-color) !important;
+}
+
+
+/**
+.a-button[data-type=primary] {
+    background: #09f !important;
+}
+**/
+
+/** 記事背景 */
+.o-textNote,
+.o-imageNote {
+  background: var(--bg-color) !important;
+}
+/** 記事ホバー時の背景 */
+.o-textNote:hover:before,
+.o-imageNote:hover:before {
+  background: var(--sub-bg-color) !important;
+}
+/** 記事見出し */
+/** 記事サマリ */
+/** 投稿者名 */
+.o-timelineFooter__name .a-link {
+  color: var(--text-color);
+}
+/** 投稿日時 */
+/** 〇〇からのおすすめ */
+.o-timelineFooter__date .a-link,
+.o-timelineNotificationMessages__text {
+  color: var(--sub-text-color);
+}
+/** 記事右下スキアイコン */
+.o-like > .a-icon--heartFill {
+  color: var(--like-color) !important;
+}
+/** マガジン追加モーダル */
+.modal-backdrop {
+  background: var(--sub-bg-color);
+  opacity: 0.5;
+}
+.m-basicModalContent__header {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  border-bottom: 1px solid var(--sub-text-color) !important;
+}
+.o-magazineList {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+.m-basicModalContent__footer {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  border-top: 1px solid var(--sub-text-color) !important;
+}
+.m-basicModalContent__body {
+  background: var(--bg-color) !important;
+}
+.o-magazineListItem:not(:last-of-type) {
+  border-bottom: 1px solid var(--sub-text-color) !important;
+}
+.o-magazineListItem:last-of-type {
+  border-bottom: none
+}
+.o-magazineListForm {
+  border-top: 1px solid var(--sub-text-color) !important;
+}
+.m-magazineCover__title {
+  color: var(--text-color) !important;
+}
+.m-magazineCover__name {
+  color: var(--sub-text-color) !important;
+}
+.o-magazineListItem__action,
+.o-magazineListItem__button > button {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+.m-magazineCover__status--lock {
+  background: var(--sub-bg-color) !important;
+}
+/** サイドバー */
+.o-sidebarPickupNotes  .m-noteListItem__name {
+  color: var(--sub-text-color) !important;
+}
+.o-timeline__item,
+.m-noteListItem__border--bottom {
+  border-bottom: 1px solid var(--sub-text-color) !important;
+}
+.m-noteListItem__hover:hover:before,
+.m-contestListItem:hover:before {
+  background: var(--sub-bg-color) !important;
+}
+.o-sidebarPickupNotes__header__readAll:hover,
+.o-sidebarContests__header__readAll:hover {
+  color: var(--text-color) !important;
+}
+.m-contestListItem__description {
+  color: var(--sub-text-color) !important;
+}
+.m-contestListItem.o-sidebarContests__listItem {
+  border-bottom: 1px solid var(--sub-text-color);
+}
+.o-sidebarTwitter {
+   border: 1px solid var(--sub-text-color) !important;
+}
+.o-sidebarTwitter__description {
+  color: var(--sub-text-color) !important;
+}
+.m-likeThanks__balloon,
+.m-likeThanks__balloon:before{
+  background: var(--bg-color) !important;
+}
+.m-likeThanks__balloon {
+  border: 1px solid var(--sub-text-color) !important;
+}
+.m-likeThanks__message {
+  color: var(--text-color) !important;
+}
+
+/** end of ホーム  */
+
+.p-category {
+  /* background: var(--sub-bg-color) !important;   */
+}
+.renewal-c-card {
+  background: var(--bg-color) !important;
+  border: 1px solid var(--blue-gray) !important;
+}
+.m-buttonGroup > .m-buttonGroup__item > button {
+  background: var(--sub-bg-color) !important;
+  color: var(--sub-text-color) !important;
+  border: 1px solid var(--blue-gray) !important;
+}
+.m-buttonGroup > .m-buttonGroup__item > button.is-active {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+.hashtag > .a-tag {
+  background: var(--bg-color) !important;
+  border: 1px solid var(--sub-text-color);
+}
+.hashtag > .a-tag > .a-tag__label {
+  color: var(--text-color) !important;
+}
+.o-timelineCardFooter {
+  border-top: 1px solid var(--sub-text-color) !important;
+}
+.a-balloon__body,
+.a-balloon__body:before {
+  background: var(--sub-bg-color) !important;
+  border: none !important;;
+}
+.o-searchWindow__item:hover {
+  background: var(--bg-color) !important;
+}
+.o-searchWindow__link {
+  color: var(--sub-text-color) !important;
+}
+.o-searchWindow__item:hover .o-searchWindow__link {
+  color: var(--text-color) !important;
+}
+.m-basicBalloonList__item.m-basicBalloonList__item--separate {
+  border-top: 1px solid var(--blue-gray) !important;
+}
+.m-basicBalloonList__link {
+  color: var(--sub-text-color) !important;
+}
+.m-basicBalloonList__link:hover {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+.o-embedModal__body {
+  background: var(--bg-color) !important;
+}
+.o-timelineCardFooter__item button.a-icon:hover {
+  color: var(--text-color) !important;
+}
+
+
+/** end of category マンガ */
+
+.mod-sound-player.tl {
+  background: var(--sub-bg-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+}
+.mejs-controls .mejs-time-rail .mejs-time-total {
+  background: var(--blue-gray) !important;
+}
+.mejs-controls .mejs-time-rail .mejs-time-current {
+  background: var(--bg-color) !important;
+}
+
+/** end of category サウンド */
+
+.o-noteContentText,
+.o-noteContentText__title,
+.o-noteContentText__body,
+.o-noteContentText__body a:hover,
+.external-article-widget-regularprice,
+.external-article-widget-url {
+  color: var(--text-color) !important; 
+}
+.o-noteContentHeader__date,
+.o-noteContentHeader__action,
+.external-article-widget-description {
+  color: var(--sub-text-color) !important; 
+}
+.external-article-widget {
+  border: 1px solid var(--blue-gray) !important;
+}
+.external-article-widget:hover {
+  border: 1px solid var(--sub-text-color) !important;
+}
+.o-noteContentText__body blockquote {
+  background: var(--sub-bg-color) !important;
+}
+.o-noteContentText__body div a:nth-child(2) {
+  border-left: 1px solid var(--blue-gray) !important;
+}
+.o-supportAppeal {
+  background: var(--sub-bg-color) !important;
+}
+.o-supportAppeal__contents {
+  background: var(--bg-color) !important;
+}
+.o-actionControl__item button.a-icon {
+  color: var(--sub-text-color) !important;
+}
+.o-actionControl__item .a-icon:hover {
+  color: var(--text-color) !important;
+}
+.a-balloon--arrow_bottomRight .a-balloon__body:before {
+  background: var(--sub-bg-color) !important;
+  border-right: 1px solid rgba(255, 255, 255, .5) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, .5) !important;
+}
+.m-noteListItem__border--top {
+  border-top: 1px solid var(--sub-text-color) !important;
+}
+.o-sliblingNote {
+  border-top: 1px solid var(--sub-text-color) !important;
+  border-bottom: 1px solid var(--sub-text-color) !important;
+}
+.m-noteListItem__name {
+  color: var(--sub-text-color) !important;
+}
+.o-sliblingNote:before {
+  background-color: var(--sub-text-color) !important;
+}
+.m-creatorInfo__action__follow button.a-button[data-type="primary"] {
+  background: var(--main-color) !important;
+  color: var(--text-color) !important;
+}
+.o-commentArea__inputAction button.a-button[disabled="disabled"] {
+  background: var(--bg-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+  color: var(--blue-gray) !important;
+}
+.p-article__comment {
+  border-top: 1px solid var(--sub-text-color) !important;
+  border-bottom: none !important;
+}
+.p-article__recommend {
+  border-top: 1px solid var(--sub-text-color) !important;
+}
+.p-article__recommend {
+  background: var(--sub-bg-color) !important;
+}
+.m-noteCard {
+  background: var(--bg-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+}
+.m-noteCard .a-balloon__body {
+  background: var(--bg-color) !important;
+  border: 1px solid var(--sub-text-color);
+}
+.m-noteCard .m-basicBalloonList__item:hover {
+  background: var(--sub-bg-color) !important;
+}
+.o-footer__link {
+  color: var(--sub-text-color) !important;
+}
+.o-footer__link:hover {
+  color: var(--text-color) !important;
+}
+.o-shareBooster,
+.o-shareBooster:before {
+   background: var(--bg-color) !important; 
+}
+.o-shareBooster,
+.o-shareBooster.is--active {
+  border-top: 1px solid var(--sub-text-color) !important;
+}
+/** end of 記事ページ */
+
+.o-noteContentImage__title {
+  color: var(--text-color) !important;
+}
+
+.o-commentArea__name,
+.o-commentArea__nameLink,
+.o-commentArea__message,
+.o-commentArea__likeLink:hover {
+  color: var(--text-color) !important;
+}
+
+.o-commentArea__status,
+.o-commentArea__date,
+.o-commentArea__likeCount,
+.o-commentArea__likeLink {
+  color: var(--sub-text-color) !important;
+}
+
+.o-commentArea__add {
+  border-top: 1px solid var(--blue-gray) !important;
+}
+
+.o-otherReccomend__item > .m-noteCard:hover {
+  border: 1px solid var(--gray) !important;
+}
+
+/** end of いろんな記事ページ */
+
+/** TOP Twitter */
+.o-sidebarTwitter {
+  background: var(--sub-bg-color) !important;
+}
+.o-sidebarTwitter__description {
+  color: var(--sub-text-color) !important;
+}
+/** TOP 募集中のお題企画 すべて見る */
+.o-sidebarThemes__header__readAll {
+  color: var(--sub-text-color) !important;
+}
+.o-sidebarThemes__header__readAll:hover {
+  color: var(--text-color) !important;
+}
+/* おすすめ 編集部のおすすめ */
+.p-searchHeader__pageTitle {
+  background: var(--bg-color) !important;
+}
+/* おすすめ サイドバー */
+.o-magazineCard {
+  background: var(--bg-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+}
+.o-magazineCard:hover {
+  border: 1px solid var(--gray) !important;
+}
+.o-magazineCard__follower {
+  color: var(--sub-text-color) !important;
+}
+.o-magazineCard__footer {
+  border-top: 1px solid var(--sub-text-color) !important;
+}
+.o-calendar__body {
+  border: 1px solid var(--sub-text-color) !important;
+}
+.o-calendar__monthLink.is-active {
+  color: var(--text-color) !important
+}
+.o-calendar__monthLink {
+  color: var(--blue-gray) !important;
+}
+/* 記事ページ 1人がおすすめしています */
+.m-contentReviewers__label {
+  color: var(--sub-text-color) !important;
+}
+/* マガジン */
+.o-magazine {
+  background: var(--sub-bg-color) !important;
+}
+.o-magazineCard__avatarName,
+.o-magazineSmallCard__description,
+.o-magazineSmallCard__follower {
+  color: var(--sub-text-color) !important;
+}
+.o-magazineSmallCard {
+  background: var(--bg-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+}
+.o-magazineSmallCard:hover {
+  border: 1px solid var(--gray) !important;
+}
+/* end of マガジン */
+
+/* お題 */
+.p-contests {
+  background: var(--sub-bg-color) !important;
+}
+.m-tabMenu__item.is--active {
+  border-bottom: 2px solid var(--text-color) !important;
+}
+.m-tabMenu__item.is--active > .m-tabMenu__link{
+  color: var(--text-color) !important;
+}
+.m-tabMenu__item > .m-tabMenu__link{
+  color: var(--blue-gray) !important;
+}
+.m-tabMenu__item > .m-tabMenu__link:hover{
+  color: var(--text-color) !important;
+}
+.m-tabMenu__item:hover {
+  border-bottom: 2px solid var(--text-color) !important;
+}
+.m-contestsCard {
+  background: var(--bg-color) !important;
+}
+.m-contestsCard:hover {
+  border: 1px solid var(--blue-gray) !important;
+}
+.m-contestsCard__postCount,
+.m-contestsCard__finishDate {
+  color: var(--sub-text-color) !important;  
+}
+.o-contests__column-title {
+  color: var(--text-color) !important;
+}
+
+/* end of  お題 */
+
+/* ピックアップ */
+.renewal-l-header__inner {
+  background: var(--bg-color) !important;
+}
+.p-globalNavigation__item > .p-globalNavigation__link {
+  color: var(--sub-text-color) !important;
+}
+.p-globalNavigation__item:hover > .p-globalNavigation__link {
+  color: var(--text-color) !important;
+}
+.p-globalNavigation__item:hover:before {
+  background: var(--text-color) !important;
+}
+.p-globalNavigation__item.is--active > .p-globalNavigation__link {
+  color: var(--text-color) !important;
+}
+.p-globalNavigation__item.is--active:before {
+  background: var(--text-color) !important;
+}
+.p-dropNavigation__link {
+  color: var(--sub-text-color) !important;
+}
+.p-dropNavigation__link:hover {
+  color: var(--text-color) !important;
+}
+.p-dropNavigation__link.is--active {
+  color: var(--text-color) !important;
+}
+.button-group > li > .button {
+  background: var(--sub-bg-color) !important;
+  color: var(--sub-text-color) !important;
+  border: 1px solid var(--blue-gray) !important;
+}
+.button-group > li > .button.is--active {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+.ns-note .renewal-c-card__userName a,
+.ns-note .renewal-c-card__date a, 
+.ns-note .renewal-p-cardItem__title a {
+  color: var(--text-color) !important;
+}
+.ns-note .p-messageBalloon,
+.ns-note .p-messageBalloon:before {
+  background: var(--bg-color) !important;
+}
+.ns-note .p-replyToLike__message {
+  color: var(--text-color) !important;
+}
+.renewal-c-popover,
+.renewal-c-popover:before {
+  background: var(--sub-bg-color) !important;
+}
+.renewal-c-popover__item:hover {
+  background: var(--bg-color) !important;
+}
+.renewal-c-popover__item a {
+  color: var(--text-color) !important;
+}
+.popeye-modal,
+.navi-modal,
+.bg-ulgrey {
+  background: var(--bg-color) !important;
+}
+.navi-modal,
+.add-mag-list > .mags {
+  border-bottom: 1px solid var(--blue-gray) !important; 
+}
+.navi-modal > .title {
+  color: var(--text-color) !important;
+}
+.popeye-modal > .border-full {
+  border: 1px solid var(--blue-gray) !important; 
+}
+.popeye-modal .bd-t {
+  border-top: 1px solid var(--blue-gray) !important; 
+}
+.button-xsmall {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+.mag-new-link {
+  color: var(--text-color) !important;
+}
+.popeye-modal .action-area .btn {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+.ns-note input[type="text"], 
+.ns-note input[type="password"], 
+.ns-note input[type="email"], 
+.ns-note input[type="number"], 
+.ns-note input[type="search"] {
+  background: var(--bg-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+}
+.mag-new.edit .btn {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+.renewal-c-card__foot {
+  border-top: 1px solid var(--sub-text-color) !important;
+}
+/* end of ピックアップ */
+
+/* 注目カテゴリ */
+.p-category__header,
+.o-categoryList__header,
+.p-category > .o-categoryList {
+  background: var(--bg-color) !important;
+}
+.o-categoryList__more,
+.m-categoryCard__authorName {  
+  color: var(--sub-text-color) !important; 
+}
+.m-categoryCard__content {
+  background: var(--sub-bg-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+}
+.o-categoryList #manga,
+.o-categoryList #column,
+.o-categoryList #novel,
+.o-categoryList #photo,
+.o-categoryList #music,
+.o-categoryList #business,
+.o-categoryList #lifestyle,
+.o-categoryList #tech,
+.o-categoryList #entertainment {
+  background: var(--bg-color) !important;
+}
+.p-category__anchorItem > a:hover {
+  color: var(--text-color) !important;
+}
+/* end of 注目カテゴリ */
+
+/* 人気タグ */
+.c-tags__link {
+  background: var(--bg-color) !important;
+  color: var(--sub-text-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+}
+.c-tags__link:hover {
+  color: var(--text-color) !important;
+  border: 1px solid var(--gray) !important;
+}
+.renewal-c-button--medium {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+}
+.renewal-c-button--medium:hover {
+  border: 1px solid var(--gray) !important;
+}
+/* end of  人気タグ */
+/* 通知 */
+.m-notificationListitem__link {
+  /* background: var(--sub-bg-color) !important; */
+}
+.m-notificationListitem.m-notificationList__item {
+  background: var(--sub-bg-color) !important;
+}
+.m-notificationList__item+.m-notificationList__item {
+  border: none !important;
+}
+.m-notificationListitem__message,
+.m-notificationListitem__message a {
+  color: var(--text-color) !important;
+}
+.m-notificationListitem__date {
+  color: var(--sub-text-color) !important;
+}
+.m-notificationList__item.m-notificationList__item--empty {
+  background: var(--sub-bg-color) !important;
+  color: var(--text-color) !important;
+}
+/* end of 通知 */
+
+/* ユーザーメニュー */
+.o-usermenuPopover__item,
+.o-usermenuPopover__link {
+  color: var(--text-color) !important;
+}
+.o-usermenuPopover__summary {
+  color: var(--sub-text-color) !important;
+}
+.o-usermenuPopover__item--separate:before {
+  background: var(--sub-text-color) !important;
+}
+.o-usermenuPopover__link:hover {
+  background: var(--sub-bg-color) !important;
+}
+/* end of ユーザーメニュー */
+/* 投稿 */
+#note-editor-screen .c-button,
+.p-editorCounter {
+  color: var(--sub-text-color) !important;
+}
+#note-editor-screen .c-button:hover {
+  color: var(--text-color) !important;
+}
+.p-draftNoteList {
+  border-top: 1px solid var(--sub-text-color) !important;
+}
+.p-draftNoteList__caption,
+.o-postNote__itemLabel {
+  color: var(--text-color) !important;
+}
+.p-draftNoteList__title,
+.p-draftNoteList__date {
+  color: var(--sub-text-color) !important;
+}
+.p-draftNoteList__link:hover {
+  background: var(--sub-bg-color) !important;
+}
+.ns-note .header-new .header-new__inner {
+  background: var(--bg-color) !important;
+}
+.header-new__actionItem > button {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+}
+.note-name.note-name--sans-serif,
+.note-body.note-body--sans-serif,
+.note-body.note-body--sans-serif a,
+.ns-note .note-body.note-body--sans-serif,
+.editable.medium-editor-element {
+  color: var(--text-color) !important;
+}
+.embed-toolbar-buttons,
+.ns-note .embed-toolbar .button-circle {
+  background: var(--bg-color) !important; 
+  color: var(--text-color) !important;
+}
+.ns-note .embed-toolbar .button-circle:hover {
+  border: 1px solid var(--gray) !important;
+}
+.file-widget {
+  border: 1px solid var(--sub-text-color) !important;
+}
+#note-editor-screen .file-widget .file-widget__download .c-button {
+  color: var(--text-color) !important;
+}
+.file-widget__filename {
+  color: var(--text-color) !important;
+}
+.file-widget__filesize {
+  color: var(--sub-text-color) !important;
+}
+.url-form button {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+.external-article-widget-title {
+  color: var(--text-color) !important;
+}
+.external-article-widget-description {
+  color: var(--sub-text-color) !important;
+}
+.medium-editor-element a {
+  color: var(--text-color) !important;
+}
+.medium-editor-element blockquote {
+  background: var(--sub-bg-color) !important;
+  color: var(--sub-text-color) !important;
+}
+.p-editorTips__body {
+  background: var(--bg-color) !important;
+  border: 1px solid var(--blue-gray) !important;
+}
+.p-box__title {
+  color: var(--sub-text-color) !important;
+}
+.p-box__listItem a {
+  color: var(--text-color) !important;
+}
+.p-box__listItem:before {
+  background: var(--text-color) !important;
+}
+.p-editorManual__body {
+  background: var(--bg-color) !important;
+  border: 1px solid var(--blue-gray) !important;
+}
+.p-editorManual__toolListLabel,
+.p-editorManual__itemText,
+.p-keyCommand__separate {
+  color: var(--sub-text-color) !important;
+}
+.p-editorManual__body > .p-editorManual__column:first {
+  border-right: 1px solid var(--blue-gray) !important;  
+}
+.p-keyCommand__key {
+  background: var(--bg-color) !important;
+  color: var(--sub-text-color) !important;
+  border: 1px solid var(--sub-text-color) !important;  
+}
+.modal-window,
+.modal-window__foot--close {
+  background: var(--bg-color) !important;
+}
+.modal-window__foot--close {
+  border-top: 1px solid var(--sub-text-color) !important;    
+}
+.modal-window__foot--close .c-button {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--sub-text-color) !important;     
+}
+.modal-window__foot--close .c-button:hover {
+  border: 1px solid var(--gray) !important;
+}
+.a-balloon--arrow_topRight .a-balloon__body:before {
+  background: var(--sub-bg-color) !important;
+  border-right: 1px solid var(--blue-gray) !important;
+  border-bottom: 1px solid var(--blue-gray) !important;
+}
+.modal-window__head {
+  background: var(--bg-color) !important;
+  border-bottom: 1px solid var(--sub-text-color) !important;
+}
+.modal-window__foot {
+  border-top: 1px solid var(--sub-text-color) !important;
+}
+.post-ui__disabled {
+  color: var(--sub-text-color) !important;
+}
+.post-ui__help {
+  color: var(--sub-text-color) !important;
+}
+.advanced-setting__button,
+.ns-note .advanced-setting .advanced-setting__open,
+.advanced-setting__form-elem .tags {
+  background: var(--bg-color) !important; 
+}
+.advanced-setting {
+  border: 1px solid var(--sub-text-color) !important;
+}
+.advanced-setting__open {
+  border-top: 1px solid var(--sub-text-color) !important;
+}
+.advanced-setting__form-elem .tags {
+  border: 1px solid var(--sub-text-color) !important;
+}
+.advanced-setting__form-elem .tags .tag-item {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+}
+.advanced-setting__form-elem .tags .tag-item .remove-button {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+.suggestion-list {
+  border-top: 1px solid var(--sub-text-color) !important;
+}
+.suggestion-item {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+.suggestion-item__hashtagCount {
+  color: var(--sub-text-color) !important;
+}
+.ns-note .advanced-setting__form-elem .tags input[type="text"] {
+  border: none !important;
+}
+.p-contestHashtagSelector__hashtagLabel {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+}
+.p-contestHashtagSelector__detail .c-icon {
+  color: var(--sub-text-color) !important;
+}
+.advanced-setting__mag {
+  background: var(--bg-color) !important; 
+  border: 1px solid var(--sub-text-color) !important;
+}
+.modal-window__foot {
+  background: var(--bg-color) !important;  
+}
+.modal-window__foot .button-modal-link {
+  border: 1px solid var(--sub-text-color) !important;   
+  color: var(--text-color) !important;
+}
+.modal-window__foot .button-modal-link:hover {
+  border: 1px solid var(--gray) !important;   
+}
+.ns-note .post-ui .post-ui__pay-input {
+  background: var(--bg-color) !important; 
+  border: 1px solid var(--sub-text-color) !important;
+}
+.ns-note .bg-ulgrey, .ns-note .mod-form-note .action-area, .ns-note .mod-form-note .up-images, .ns-note .modal-window__head--title-grey, .ns-note .modal-window__body--grey, .ns-note .modal-window__foot, .ns-note .modal-window__foot--close, .ns-note .modal-window__total-amount, .ns-note .modal-window__sns, .ns-note .support-note, .ns-note .get-urlname__input, .ns-note .advanced-setting, .ns-note .subscription-payment, .ns-note .mag-salesList .mag-salesList__head {
+  background: var(--bg-color) !important;   
+}
+.paywall-line-next {
+  background: var(--bg-color) !important;  
+  border-color: var(--sub-text-color) !important;
+}
+.paywall-line-next .txt-grey {
+  color: var(--text-color) !important;
+}
+.paywall-line {
+   background: var(--sub-bg-color) !important;   
+}
+.ns-note .header-new .header-new__inner.header-new--innerDetail {
+  border-bottom: 1px solid var(--blue-gray) !important;
+}
+.header-new__actionItem a  {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+}
+.ns-note .renewal-c-popover__item a {
+  background: none !important;
+  border: none !important;
+}
+.ns-note .c-button--type_primary {
+  background: var(--bg-color) !important;
+  color: var(--main-color) !important;
+  border: 1px solid var(--main-color) !important;
+}
+.o-indexHeading {
+  background: var(--sub-bg-color) !important;
+}
+.o-indexHeading__title,
+.o-indexHeading__link:hover {
+  color: var(--text-color) !important;
+}
+.o-indexHeading__item:not(:first-child) {
+  border-top: 1px solid var(--sub-text-color) !important;
+}
+.o-indexHeading__link {
+  color: var(--sub-text-color) !important;
+}
+.m-basicBalloonList__item+.m-basicBalloonList__item--delete {
+  border-top: 1px solid var(--sub-text-color) !important;
+}
+/* ヘルプページ上で投稿ボタンを押すと別のスタイルが適用される？ */
+.renewal-c-popover--postNote {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--sub-text-color) !important; 
+}
+.renewal-c-popover--postNote:before {
+  background: var(--bg-color) !important; 
+  border-right: 1px solid var(--sub-text-color) !important;
+  border-bottom: 1px solid var(--sub-text-color) !important;
+}
+.p-postNoteList__label {
+  color: var(--text-color) !important;
+}
+.renewal-p-modalHeader,
+.ns-note .mod-form-note,
+.ns-note .mod-form-note .upload {
+  background: var(--bg-color) !important;  
+}
+.renewal-p-modalHeader {
+  border-top: 1px solid var(--blue-gray) !important;
+  border-left: 1px solid var(--blue-gray) !important;
+  border-right: 1px solid var(--blue-gray) !important;
+}
+.ns-note .mod-form-note .upload {
+  border-color: var(--sub-text-color) !important;
+  color: var(--sub-text-color) !important;
+}
+.popeye-modal .bg-grey {
+  background: var(--bg-color) !important;
+  border-top: 1px solid var(--sub-text-color) !important;
+}
+.popeye-modal .c-button {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+}
+.ns-note .txt-dGrey {
+  color: var(--sub-text-color) !important;
+}
+.ns-note .c-button.c-button--high {
+  color: var(--main-color) !important;
+  border: 1px solid var(--main-color) !important;
+}
+.ns-note textarea {
+  background: var(--bg-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+}
+.ns-note .txt-grey {
+  color: var(--sub-text-color) !important;
+}
+.post-soundnote .cover-image {
+  background: var(--sub-bg-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+}
+/* end of 投稿 on ヘルプページ */
+
+/* ホーム上での投稿 */
+.o-editImageNoteForm.modal-content.m-basicModalContent.m-basicModalContent--size_medium {
+  background: var(--bg-color) !important;
+}
+.m-formFile__item--padded {
+  border-color: var(--sub-text-color) !important;
+}
+.m-uploadedImage.o-editImageNoteForm__itemCard {
+  background: var(--bg-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+}
+.m-uploadedImage__header {
+  border-bottom: 1px solid var(--sub-text-color) !important;
+}
+.m-formItem__description {
+  color: var(--sub-text-color) !important;
+}
+.o-advancedSetting {
+  background: var(--bg-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+}
+.m-accordion__header,
+.m-accordion__icon.a-icon.a-icon--arrowdropdown {
+  color: var(--text-color) !important;
+}
+.m-tagInput__body {
+  background: var(--bg-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+}
+.m-tagInput__item .a-tag {
+  background: var(--bg-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+}
+.a-tag__label {
+  color: var(--text-color) !important;
+}
+.m-tagInput__autocomplete,
+.m-tagInput__autocompleteItem {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+.m-tagInput__autocompleteMenu {
+  border: 1px solid var(--blue-gray) !important;
+}
+.o-hashtagInput__contestTag .a-tag {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+}
+.o-hashtagInput__contestInfo {
+  color: var(--sub-text-color) !important;
+}
+.o-hashtagInput__item > .o-hashtagInput__contest:nth-of-type(n+3) {
+  border-top: 1px solid var(--blue-gray) !important;
+}
+.o-editTalkNoteForm,
+.m-fileContainer__header,
+.m-fileContainer__item {
+  background: var(--bg-color) !important;
+}
+.m-inputCount__wrap,
+.m-formFile__description {
+  color: var(--sub-text-color) !important;
+}
+.m-fileContainer__header {
+  border-bottom: 1px solid var(--sub-text-color) !important;
+}
+.m-fileContainer {
+  border: 1px solid var(--sub-text-color) !important;
+}
+.modal-content.m-basicModalContent {
+  background: var(--bg-color) !important;
+}
+.m-formFile {
+  border-color: var(--sub-text-color) !important;
+}
+/* end of ホーム上での投稿 */
+
+/* マイページ */
+.o-creatorProfile,
+.o-creatorMenu,
+.o-gridNote__card,
+.o-creatorMenu__nav:before,
+.o-magazineCreateCard__button,
+.m-archiveList__section {
+  background: var(--bg-color) !important;
+}
+.m-lightbox,
+.m-archiveList__headerLink:hover,
+.m-archiveList__link:hover {
+  background: var(--sub-bg-color) !important;
+}
+.m-lightbox__close {
+  background: var(--bg-color) !important;
+  color: var(--texst-color) !important;
+  border: 1px solid var(--blue-gray) !important;
+}
+.p-action__item {
+  color: var(--sub-text-color) !important;
+}
+.m-profileStatus__followCount,
+.m-creatorSocialLinks__item,
+.p-action__item button.a-icon:hover,
+/*.p-action__item .o-like__icon .a-icon--heart, */
+.o-creatorMenu__link,
+.m-archiveList__headerLink:hover,
+.m-archiveList__link:hover,
+.o-creatorProfile__edit--list:hover {
+  color: var(--text-color) !important;
+}
+.p-action__item button.a-icon.a-icon--heartFill:hover {
+  color: var(--like-color) !important;
+}
+.m-profileStatus__followLabel,
+.o-magazineCard__avatarName,
+.o-magazineCreateCard__icon,
+.o-magazineCreateCard__label,
+.m-formItem__optional,
+.o-magazineCreateModal__priceAttention,
+.m-archiveList__headerLink,
+.m-archiveList__link,
+.m-archiveList__count,
+.o-creatorProfile__editSeparateTitle,
+.o-creatorProfile__edit--list {
+  color: var(--sub-text-color) !important;
+}
+.o-creatorMenu--bottomBorder,
+.o-timelineHome__item {
+  border-bottom: 1px solid var(--sub-text-color) !important;
+}
+.o-creatorMenu__inner,
+.o-creatorMenu.o-navBar__creator,
+.o-creatorProfile__editSeparateTitle {
+  border-top: 1px solid var(--sub-text-color) !important;
+}
+.o-gridNote__card,
+.o-magazineCreateCard__button,
+.m-archiveList__section {
+  border: 1px solid var(--blue-gray) !important;
+}
+.o-creatorMenu__navLink.is-active,
+.o-creatorMenu__navLink:hover,
+.o-creatorMenu__optionLink:hover {
+  border-bottom: 2px solid var(--text-color) !important;
+}
+.o-gridNote__card:hover,
+.o-magazineCreateCard__button:hover {
+  border: 1px solid var(--gray) !important;
+}
+.m-modalFooterButtonGroup.modal-window__foot {
+  border: none !important;
+}
+.m-archiveList__header,
+.m-archiveList__item {
+  border-bottom: 1px solid var(--blue-gray) !important;
+}
+.a-select {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+.a-select__field {
+  border: 1px solid var(--sub-text-color) !important;
+}
+/* end of マイページ　*/
+
+/* 記事を管理 */
+.o-noteList__nav,
+.o-articleList__item {
+  border-bottom: 1px solid var(--sub-text-color) !important;
+}
+.o-articleList__descriptionItem,
+.o-articleList__statusLabel {
+  color: var(--sub-text-color) !important;
+}
+.a-checkbox__check:before,
+.o-noteListFooter__body {
+  background: var(--bg-color) !important;
+}
+.o-articleList__item:hover {
+  background: var(--sub-bg-color) !important;
+}
+.o-noteListFooter__body {
+  border-top: 1px solid var(--sub-text-color) !important;
+}
+.o-noteListFooter__badge {
+  background: var(--bg-color) !important;
+  border: 1px solid var(--main-color) !important;
+  color: var(--main-color) !important;
+}
+/* end of  記事を管理 */
+
+/* マガジンを管理  */
+.m-tabMenu__item.is--separate:before {
+  background: var(--sub-text-color) !important;
+}
+.o-magazineEditHeader,
+.o-magazineEditContent,
+.o-magazineEditor__body,
+.m-permissionTable__columnTitle,
+.o-userPick__selected,
+.o-magazineUsers__empty,
+.o-magazineArrangeNotes__item {
+  background: var(--sub-bg-color) !important;
+}
+.o-magazineEditHeader__nav,
+.o-magazineEditContent__footer,
+.o-userPick__item+.o-userPick__item {
+  border-top: 1px solid var(--sub-text-color) !important;
+}
+.o-magazineEditHeader__navLink:hover {
+  color: var(--main-color) !important;
+}
+.o-magazineEditor__itemRole,
+.o-magazineEditor__descriptionLink,
+.m-permissionTable__cell,
+.o-userPick__itemUrl,
+.o-magazineUsers__empty,
+.o-magazineArrangeNotes__bodyName,
+.o-magazineArrangeNotes__bodyDate,
+.m-sidebarArchiveChild__item {
+  color: var(--sub-text-color) !important;
+}
+.m-permissionTable tr:nth-child(2n),
+.o-userPick__item,
+.o-magazineArrangeNotes__wrap {
+  background: var(--bg-color) !important;
+}
+.m-permissionTable__columnTitle,
+.o-magazineSide__item--separate {
+  border-bottom: 1px solid var(--sub-text-color) !important;
+}
+.o-magazineArrangeNotes__item {
+  border: 1px solid var(--sub-text-color) !important;
+}
+/* end of マガジンを管理 */
+
+/* 画像を管理 */
+.ns-note .renewal-p-galleryLayout,
+.renewal-p-galleryLayout__header,
+.ns-note .renewal-c-popover--sortNavAddFooter,
+.ns-note .c-modal--wide, 
+.ns-note .c-modal,
+.ns-note .c-modal__footer{
+  background: var(--bg-color) !important;
+}
+.ns-note .renewal-l-header__inner,
+.renewal-p-galleryLayout__header,
+.ns-note .c-modal__header {
+  border-bottom: 1px solid var(--sub-text-color) !important;
+}
+.ns-note .u-flexboxBasic {
+  background: var(--bg-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+}
+.ns-note .renewal-c-popover--sortNavAddFooter .renewal-c-popover__item:hover,
+.ns-note .renewal-c-popover__footer > a:hover {
+  background: var(--sub-bg-color) !important;
+}
+.ns-note .renewal-c-popover--sortNavAddFooter {
+  border: 1px solid var(--blue-gray) !important;
+}
+.ns-note .renewal-c-popover__footer {
+  border-top: 1px solid var(--blue-gray) !important;
+}
+.ns-note .renewal-c-popover__footer > a {
+  color: var(--text-color) !important;
+}
+.ns-note .renewal-c-button--small {
+  background: var(--bg-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+}
+.ns-note .renewal-c-button--small:hover {
+  border: 1px solid var(--gray) !important;
+}
+.ns-note .renewal-c-button--primarySmall {
+  border: 1px solid var(--main-color) !important;
+  color: var(--main-color) !important;
+  background: var(--bg-color) !important;
+}
+.ns-note .renewal-c-button--primarySmall:hover {
+  border: 1px solid var(--main-color-dark) !important;
+  color: var(--main-color-dark) !important;
+}
+.ns-note .p-galleryModal__item:first-of-type {
+  border-bottom: 1px solid var(--sub-text-color) !important;
+}
+.ns-note .renewal-p-icon--question {
+  background: var(--bg-color) !important;
+}
+.ns-note .renewal-p-icon--question:after {
+  color: var(--main-color) !important;
+  border: 1px solid var(--main-color) !important;
+  border-radius: 50%;
+}
+.ns-note .tags-input.tags-input .tags {
+  background: var(--bg-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+}
+.ns-note .tags-input.tags-input .tags .tag-item {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+}
+.ns-note .tags-input.tags-input .tags .tag-item .remove-button {
+  background: var(--bg-color) !important;
+}
+/* end of  画像を管理 */
+
+/* アカウント設定 */
+.ns-note .box-light,
+.ns-note .bg-white {
+  background: var(--sub-bg-color) !important;
+}
+.ns-note .mod-operation-page .container-operation .grey-box  {
+  background: var(--bg-color) !important;
+}
+.ns-note .txt-supplementary,
+.p-reactionList__text {
+  color: var(--sub-text-color) !important; 
+}
+.ns-note .mod-operation-page-head .tab-menu .tabs a:hover {
+  color: var(--main-color) !important;
+}
+.ns-note .btn-low,
+.ns-note .btn {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+}
+.ns-note .btn-high {
+  background-color: var(--bg-color) !important;
+  color: var(--main-color) !important;
+  border: 1px solid var(--main-color) !important;
+}
+.ns-note .btn-high:hover {
+  color: var(--main-color-dark) !important;
+  border: 1px solid var(--main-color-dark) !important;
+}
+.ns-note .p-reactionList__preview {
+  background-color: var(--bg-color) !important;
+}
+.ns-note .btn-disable {
+  background: var(--sub-bg-color) !important;
+  color: var(--blue-gray) !important;
+  border: 1px solid var(--blue-gray) !important;
+}
+.ns-note .c-select {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+.ns-note select,
+.ns-note .c-select__field {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+} 
+.ns-note .container-narrow a {
+  color: var(--text-color) !important;
+}
+.ns-note .mod-credit {
+  background: var(--bg-color) !important;
+}
+.ns-note .mod-credit .img-creditcard-wrap {
+  background: var(--sub-bg-color) !important;
+}
+.ns-note .icon-small-question {
+  background-color: var(--sub-bg-color) !important;
+}
+.angucomplete-dropdown {
+  border: 1px solid var(--blue-gray) !important;
+}
+.angucomplete-row {
+  background-color: var(--bg-color) !important;
+  border-bottom: 1px solid var(--blue-gray) !important;
+}
+.ns-note .p-searchForm--bank .angucomplete-row {
+  color: var(--text-color) !important;
+}
+.angucomplete-dropdown {
+  background-color: var(--bg-color) !important;
+}
+.angucomplete-row:hover {
+  background-color: var(--sub-bg-color) !important;
+}
+/* end of アカウント設定 */
+
+/* ダッシュボード */
+.ns-note .p-settings__mainInner,
+.ns-note .p-settings__onboarding,
+.ns-note .p-settings__read {
+  background-color: var(--sub-bg-color) !important;
+}
+.ns-note .bg-grey,
+.ns-note .table thead th,
+.ns-note .p-badgeDetail__footer {
+  background-color: var(--bg-color) !important;
+}
+.p-settings__mainInner .txt-small a,
+.p-settings__readListItem a {
+  color: var(--text-color) !important;
+}
+.ns-note .table td,
+.ns-note .p-settings__readItem,
+.ns-note .p-badgeDetail__footer {
+  border-top: 1px solid var(--sub-text-color) !important;
+}
+.p-settings__onboardingItemLabel,
+.p-settings__onboardingItemDescription,
+.ns-note .p-settings__readSubTitle,
+.ns-note .p-badgeList__exampleText,
+.ns-note .p-badgeDetail__description,
+.ns-note .mod-salesmanage__attention {
+  color: var(--sub-text-color) !important;
+}
+.ns-note .p-settings__readListItem:before {
+  background: var(--text-color) !important;
+}
+.ns-note .c-button--type_basic {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+}
+.ns-note .c-button--type_basic:hover {
+  border: 1px solid var(--gray) !important;
+}
+.ns-note .p-settings .tab-menu .tabs a:hover {
+  color: var(--main-color) !important;
+}
+.ns-note .p-badgeList__item {
+  border: 1px solid var(--sub-text-color) !important;
+}
+.ns-note .border-full-3 {
+  border-color: var(--sub-text-color) !important;
+}
+/* end of ダッシュボード */
+
+/* note プレミアム */
+.ns-note .staticPage,
+.ns-note .staticPage .staticPage__bgGrey.pattern-grey {
+  background: var(--bg-color) !important;
+}
+.ns-note .staticPage .staticPage__Lead,
+.ns-note .premium .premium__featureList>li .featureList__text>p,
+.ns-note .staticPage .staticPage__annotation {
+  color: var(--sub-text-color) !important;
+}
+.ns-note .premium .premium__featureList>li {
+  border-bottom: 1px solid var(--sub-text-color) !important;
+}
+.ns-note .premium .premium__featureList,
+.ns-note .staticPage .staticPage__bgGrey.pattern-grey {
+  border-top: 1px solid var(--sub-text-color) !important;
+}
+.ns-note .c-button.c-button--staticPage-cv,
+.ns-note .button-relative--modal.button-high {
+  background: var(--bg-color) !important;
+  color: var(--main-color) !important;
+  border: 1px solid var(--main-color) !important;
+}
+.ns-note .c-button.c-button--staticPage-cv:hover,
+.ns-note .button-relative--modal.button-high:hover {
+  color: var(--main-color-dark) !important;
+  border: 1px solid var(--main-color-dark) !important;
+}
+.ns-note .premium .staticPage__table .premium__table>thead,
+.ns-note .premium .staticPage__table .premium__table>tbody>tr:nth-child(even) {
+  background: var(--sub-bg-color) !important;
+}
+.ns-note .premium .staticPage__table .premium__table>tbody>tr>td {
+  color: var(--text-color) !important;
+}
+.modal-window__border-box {
+  border-color: var(--sub-text-color) !important; 
+}
+
+/* end of note プレミアム */
+
+/* もろもろ */
+.ns-note .p-searchForm--header__submit {
+  background: var(--bg-color) !important;
+}
+.ns-note .p-searchHistoryDropdown {
+  background: var(--sub-bg-color) !important;
+  color: var(--sub-text-color) !important;
+}
+.p-searchHistoryDropdown__item:hover {
+  background: var(--sub-bg-color) !important;
+}
+.ns-note .p-searchHistoryDropdown__word,
+.ns-note .renewal-p-notificationList__date,
+.ns-note .renewal-p-mymenuList__span {
+  color: var(--sub-text-color) !important;
+}
+.ns-note .p-searchHistoryDropdown__word:hover,
+.p-searchHistoryDropdown__title,
+.ns-note .renewal-p-notificationList a,
+.renewal-p-mymenuList__item a {
+  color: var(--text-color) !important;
+}
+.ns-note .p-searchHistoryDropdown:before,
+.renewal-c-popover--notification,
+.renewal-c-popover--notification:before,
+.ns-note .renewal-c-popover--mymenu,
+.ns-note .renewal-c-popover--mymenu:before {
+  background: var(--sub-bg-color) !important;
+}
+.ns-note .renewal-c-popover__separator {
+  border-bottom: 1px solid var(--blue-gray) !important;
+}
+.ns-note .renewal-c-button--primaryFull,
+.ns-note .renewal-p-buttonSet__postNoteButton {
+  background: var(--bg-color) !important;
+  color: var(--main-color) !important;
+  border: 1px solid var(--main-color) !important;
+}
+.ns-note .renewal-c-button--primaryFull:hover,
+.ns-note .renewal-p-buttonSet__postNoteButton:hover {
+  color: var(--main-color-dark) !important;
+  border: 1px solid var(--main-color-dark) !important;
+}
+.p-noteEmbed {
+  background: var(--bg-color) !important;
+  border: 1px solid var(--blue-gray) !important;
+}
+.p-noteEmbed__title a,
+.renewal-c-popover.renewal-c-popover--selectEyecatch a,
+.ns-note .renewal-p-galleryLayout__category>li.active>a,
+.ns-note .renewal-p-galleryLayout__category>li>a:hover {
+  color: var(--text-color) !important;
+}
+.p-noteEmbed__name a,
+.p-noteEmbed__date a,
+.o-timelinePinnedNote,
+.ns-note .renewal-p-galleryLayout__category>li>a {
+  color: var(--sub-text-color) !important;
+}
+.o-creatorContent {
+  background: var(--bg-color) !important; 
+}
+.ns-note .p-tag>li>a {
+  background: var(--sub-bg-color) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+}
+.ns-note .p-galleryModal__item:not(:last-of-type) {
+  border-bottom: 1px solid var(--sub-text-color) !important;
+}
+.o-timelineNotificationMessages__link:hover,
+.o-timelineNotificationMessages__link:hover .o-timelineNotificationMessages__text {
+  color: var(--text-color) !important;
+}
+.m-messageAlert--type_message {
+  background-color: var(--main-color-dark) !important;
+}
+.m-contestCard__body {
+  background-color: var(--sub-bg-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+}
+.m-contestCard__text {
+  color: var(--sub-text-color) !important;
+}
+.o-timelineHashtag__num{
+  color: var(--sub-text-color) !important;
+}
+.ns-note .staticPage .staticPage__grid3>li>p {
+  color: var(--sub-text-color) !important;
+}
+.ns-note .staticPage .staticPage__bgGrey {
+  background: var(--bg-color) !important;
+  border-top: 1px solid var(--sub-text-color) !important;
+  border-bottom: 1px solid var(--sub-text-color) !important;
+}
+.ns-note .guide-operation>li p {
+  color: var(--sub-text-color) !important; 
+}
+.ns-note .circleNumber {
+  background: var(--sub-bg-color) !important; 
+  border: 1px solid var(--main-color) !important;
+}
+.ns-note .circleNumber>span {
+  color: var(--main-color) !important;  
+}
+.a-image {
+  background-color: var(--bg-color) !important;  
+}
+.o-creatorProfile__avatar:before {
+  border-color: var(--bg-color) !important;
+}
+.p-recommendArticle__title a,
+.p-recommendArticle__name a {
+  color: var(--text-color) !important;   
+}
+.ns-note .p-recommendArticle>li {
+  border-bottom: 1px solid var(--sub-text-color) !important;
+}
+.follow-profile a {
+  color: var(--text-color) !important;    
+}
+.l-simple {
+  background-color: var(--bg-color) !important;   
+}
+.l-simple__header,
+.l-simple__item,
+.o-message__header,
+.o-message__body {
+  background-color: var(--sub-bg-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+}
+.ns-note .button-relative--modal {
+  background-color: var(--bg-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+  color: var(--text-color) !important;
+}
+.ns-note .button-relative--modal:hover {
+  background-color: var(--sub-bg-color) !important;
+  border: 1px solid var(--gray) !important;
+}
