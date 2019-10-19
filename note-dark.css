@@ -1,20 +1,13 @@
 :root {
-  /** Twitter Dark */
-  --bg-color: #000000;
-  --sub-bg-color: #15181C;
-  --text-color: #D9D9D9;
-  --sub-text-color: #6E767D;
-  --like-color: rgb(234,63,96);
-  --main-color: rgb(44,182,150);
-  --main-color-dark: #228d74;
-  
-  /** Twitter DarkBlue */
   --bg-color: #15202B;
   --sub-bg-color: #192734;
   --text-color: #FFFFFF;
   --sub-text-color: #8899A6;
   --gray : #c1cfd9;
   --blue-gray: #5a7488;
+  --like-color: rgb(234,63,96);
+  --main-color: rgb(44,182,150);
+  --main-color-dark: #228d74;
 }
 
 html
@@ -414,10 +407,6 @@ button.a-button[data-type="secondary"]:hover {
 .o-commentArea__likeCount,
 .o-commentArea__likeLink {
   color: var(--sub-text-color) !important;
-}
-
-.o-commentArea__add {
-  border-top: 1px solid var(--blue-gray) !important;
 }
 
 .o-otherReccomend__item > .m-noteCard:hover {
@@ -1634,4 +1623,161 @@ button.a-button[data-type="secondary"]:hover {
 .ns-note .button-relative--modal:hover {
   background-color: var(--sub-bg-color) !important;
   border: 1px solid var(--gray) !important;
+}
+.o-creatorProfileNourlname {
+  background: var(--bg-color) !important;   
+}
+.o-creatorProfileNourlname__avatar:before {
+  border-color: var(--bg-color) !important;
+}
+.o-contentFollow__userList {
+  background: var(--bg-color) !important;
+  border-color: var(--sub-text-color) !important;
+}
+.m-userListItem:hover {
+  background: var(--sub-bg-color) !important; 
+}
+.m-userListItem__description {
+  color: var(--sub-text-color) !important;
+}
+.ns-note .p-notificationBar--type_message {
+  background: var(--main-color-dark) !important;
+}
+.p-cardItem__title a {
+  color: var(--text-color) !important;
+}
+.ns-note .p-timeline__item .c-card {
+  background: var(--bg-color) !important;
+}
+.ns-note .c-card:hover:before {
+  background: var(--sub-bg-color) !important;
+}
+.c-card__avatarName a,
+.c-card__avatarDate a {
+  color: var(--sub-text-color) !important;
+}
+.ns-note .p-timeline__item {
+  border-bottom: 1px solid var(--sub-text-color) !important;
+}
+.o-noteContentText__body div[data-embed-service=external-article] .external-article-widget-update {
+  color: var(--sub-text-color) !important;
+}
+.o-noteContentText__body div[data-embed-service=youtube] {
+  border: 1px solid var(--sub-text-color) !important;
+}
+.o-timelineHashtag__relatedItem .a-tag {
+  background: var(--bg-color) !important;
+  border: 1px solid var(--sub-text-color);
+}
+.o-timelineHashtag__relatedItem .a-tag > .a-tag__label {
+  color: var(--text-color) !important;
+} 
+.ns-note .staticPage .staticPage__grid2 .grid2__text>p,
+.ns-note .subscription-magList>li .subscription-magList__discription,
+.ns-note .staticPage .staticPage__text {
+  color: var(--sub-text-color) !important;
+}
+.ns-note .staticPage .staticPage__bgGreen {
+  background: var(--main-color-dark) !important;
+}
+.m-avatars__item:before {
+  border: none !important;
+}
+.m-avatars__item--more {
+  background-color: var(--sub-bg-color) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--sub-text-color) !important;
+}
+
+/* spモード */
+.o-homescreenBanner,
+.m-supportSelectPrice__item.is-active,
+.o-timelineHome__item--insert,
+.m-pulldown__body,
+.o-searchResultNote__recommend,
+.ns-note .sp-toolbar,
+.ns-note .sp-toolbar .style-mode button,
+.ns-note .sp-toolbar .add-mode button {
+  background: var(--sub-bg-color) !important;
+}
+.o-magazineCardList__more,
+.ns-note .renewal-p-headerSearchSp,
+.o-navbarTop__search--fieldVisibleSp,
+.m-userCard,
+.o-movieNote,
+.o-shareBooster__item--suki .o-shareBooster__link,
+.m-paywallHeader__titleInner {
+  background: var(--bg-color) !important;
+}
+.o-purchaseSupport__link,
+.m-userCandidates__title,
+.ns-note .renewal-c-popover__attention,
+.ns-note .p-photoCopyright,
+.m-paywallRemainingContentLabel__countText {
+  color: var(--sub-text-color) !important;
+}
+.o-noteContentMovie__title,
+.ns-note .sp-toolbar .style-mode button,
+.ns-note .sp-toolbar .add-mode button,
+.ns-note .p-galleryModal__item a {
+  color: var(--text-color) !important;
+}
+.o-like.is-active .o-like__icon {
+  color: var(--like-color) !important;
+}
+@media only screen and (max-width: 479px) {
+  .ns-note .p-searchHeader .p-searchHeader__nav,
+  .o-timelineHashtag__meta,
+  .ns-note .p-settings__header {
+    background: var(--bg-color) !important;   
+  }
+  .o-timelineHashtag__nav {
+    border-top-color: var(--sub-text-color) !important;
+    border-bottom-color: var(--sub-text-color) !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .ns-note .p-settings__read {
+    border-bottom: 1px solid var(--sub-text-color) !important;
+  }
+  .ns-note .p-settings__sub {
+    border: none !important;
+  }
+  .ns-note .p-settings__readTitle {
+    color: var(--sub-text-color) !important;
+  }
+}
+.p-category__title,
+.o-searchWindow__item--header,
+.o-searchResultNote__item,
+.o-searchMenu {
+  border-bottom-color: var(--sub-text-color) !important;
+}
+.o-searchResultUser__item+.o-searchResultUser__item {
+  border-top-color: var(--sub-text-color) !important;
+}
+.m-userCard,
+.m-paywallSimplePaidNote {
+  border-color: var(--sub-text-color) !important;
+}
+/* end of sp */
+
+.a-button[data-type=twitter] {
+  background-color: #55acee !important;
+}
+.m-magazineInfo__other {
+  color: var(--sub-text-color) !important;
+}
+.o-noteContentText__body img {
+  border: 1px solid var(--sub-text-color) !important;
+}
+.o-contentFollow__item+.o-contentFollow__item,
+.m-userList__item+.m-userList__item {
+  border-top: 1px solid var(--sub-text-color) !important;
+}
+.p-achievementsModal__message a {
+  color: var(--text-color) !important;
+}
+.error__text {
+  color: var(--sub-text-color) !important; 
 }
