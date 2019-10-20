@@ -1778,6 +1778,58 @@ button.a-button[data-type="secondary"]:hover {
 .p-achievementsModal__message a {
   color: var(--text-color) !important;
 }
-.error__text {
+.error__text,
+.m-userDescCard__follower,
+.m-userDescCard__description,
+.m-paywallMessage__content,
+.m-paywallContentMagazine__itemDescription {
   color: var(--sub-text-color) !important; 
 }
+.ns-note .renewal-c-button--secondarySmall {
+  background: var(--bg-color) !important;
+}
+.m-userDescCard {
+  background: var(--bg-color) !important;
+  border-color: var(--sub-text-color) !important;
+}
+.m-paywallLimitedNoteMagazine,
+.m-paywallMagazineSubsc__item {
+  border-color: var(--sub-text-color) !important; 
+}
+.m-paywallMessage {
+  background: var(--bg-color) !important; 
+  border-bottom-color: var(--sub-text-color) !important;
+}
+.m-paywallMessage__inner:before {
+  border-right-color: var(--sub-text-color) !important;
+  border-bottom-color: var(--sub-text-color) !important;
+}
+.o-purchaseSubscribeMagazine__item--strong {
+  background: var(--bg-color) !important; 
+  border-color: var(--sub-text-color) !important;
+}
+.m-purchaseCover__author,
+.o-purchaseSubscribeMagazine__attentionText {
+  color: var(--sub-text-color) !important;
+}
+.o-purchaseSubscribeMagazine__carrier {
+  background: var(--bg-color) !important; 
+}
+.ns-note .box {
+  background: var(--sub-bg-color) !important; 
+}
+.ns-note .box.mod-static-page a {
+  color: var(--text-color) !important;
+}
+.m-supportSelectPrice__item:hover {
+  background: var(--sub-bg-color) !important;  
+  border: 2px solid var(--main-color) !important;
+}
+.m-sidebarMessage__body {
+  background: var(--sub-bg-color) !important;   
+  color: var(--sub-text-color) !important;
+}
+.o-magazineContent__body--layout_list .o-magazineContent__item {
+  border-bottom-color: var(--sub-text-color) !important;
+}
+
