@@ -1,3 +1,15 @@
+# note-dark
+the third-party [chrome extension](https://chrome.google.com/webstore/detail/ndjhheglhimmpjbgedbacgmloigpicng/publish-accepted?authuser=1&hl=ja) to apply dark mode style for https://note.mu.
+
+![note mu_ (2)](https://user-images.githubusercontent.com/34824697/67157555-88df6180-f368-11e9-96f1-ce3cfc370688.png)
+
+
+[noteのダークモード対応を行いました](https://note.mu/bluepixel/n/nbb6ff4c58976)
+- 1440×900で動作確認済み
+- スマホサイズでのスタイルは保証しません
+- プレミアム、有料記事等のパターンは確認できてません
+
+
 # 画面一覧
 ## ナビゲーション
 - [ホーム](https://note.mu)
