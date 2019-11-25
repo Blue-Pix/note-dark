@@ -1,6 +1,6 @@
 {
   "name": "note-dark",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "manifest_version": 2,
   "description": "Dark mode for note.mu",
   "permissions": [
