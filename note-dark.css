@@ -1833,3 +1833,93 @@ button.a-button[data-type="secondary"]:hover {
   border-bottom-color: var(--sub-text-color) !important;
 }
 
+/* 2020-4-6 */
+.o-magazineItemWithNotes,
+.o-magazineItemWithNotes:after, 
+.o-magazineItemWithNotes:before {
+  background: var(--bg-color) !important;
+}
+.o-magazineItemWithNotes__articlesLink {
+  color: var(--sub-text-color) !important;
+}
+.o-navbarNoteDetail__body {
+  background: var(--sub-bg-color) !important;
+  border-top: 1px solid var(--sub-text-color) !important;
+  border-bottom: 1px solid var(--sub-text-color) !important;
+}
+.m-notificationList {
+  background: var(--sub-bg-color) !important;
+}
+.m-notificationListItem__message {
+  color: var(--text-color) !important;
+}
+.m-notificationListItem__featuredLink.a-link > .a-image {
+  background: var(--sub-bg-color) !important;
+}
+.p-circle-settings {
+  background: var(--bg-color) !important
+}
+/* .m-settings-sidebar, */
+.p-circle-settings__main,
+.p-circle-edit__main {
+  background: var(--sub-bg-color) !important;
+}
+.o-circle-settings__text {
+  color: var(--text-color) !important;
+}
+.m-circle-recommendedPlans__benefitItem {
+  color: var(--sub-text-color) !important;
+}
+@media only screen and (min-width: 769px) {
+  .m-settings-sidebar__item:hover:before {
+    background: var(--sub-bg-color) !important; 
+  }
+}
+.m-settings-circle-title {
+  color: var(--text-color) !important; 
+}
+.o-onboardingNotice {
+  background: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+.o-onboardingNotice__description,
+.o-circle-edit__overview {
+  color: var(--sub-text-color) !important;
+}
+.p-circle-edit {
+  background: var(--bg-color) !important;
+}
+.o-header,
+.sp-toolbar {
+  background: var(--sub-bg-color) !important;
+}
+.sp-toolbar__icon--undo:before,
+.sp-toolbar .add-mode button, 
+.sp-toolbar .style-mode button, 
+.sp-toolbar__add button {
+  background: var(--bg-color) !important;
+}
+.m-submenu__item--all:before,
+.m-submenu__category {
+  background: var(--bg-color) !important;
+}
+.m-submenu__categoryItem,
+.m-submenu__link,
+.a-navItem__item,
+.o-recommendedUsers__title {
+  color: var(--sub-text-color) !important;
+}
+.swiper-prev, 
+.swiper-next {
+  background: var(--bg-color) !important; 
+}
+.o-recommendedUsers:after {
+  background: linear-gradient(90deg, var(--sub-bg-color), var(--bg-color)) !important;
+}
+.p-hashtag__link,
+.p-hashtag__item {
+  color: var(--sub-text-color) !important; 
+}
+.p-hashtag__link {
+  background: var(--sub-bg-color) !important;
+}
