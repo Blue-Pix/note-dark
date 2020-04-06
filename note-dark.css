@@ -1923,3 +1923,19 @@ button.a-button[data-type="secondary"]:hover {
 .p-hashtag__link {
   background: var(--sub-bg-color) !important;
 }
+.o-contentList__headerAll {
+  color: var(--sub-text-color) !important;  
+}
+.o-contentList__item:hover:before,
+.m-noteListItem--hover:hover:before,
+.o-circleDefault__summary,
+.o-circleDefault__planItem,
+.o-circleBlurPost__title,
+.o-circleBlurPost__content,
+.o-circle-card {
+  background: var(--sub-bg-color) !important; 
+}
+.o-timelineHome__item--insert,
+.o-talkNote {
+  background: var(--bg-color) !important; 
+}
