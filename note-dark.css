@@ -152,9 +152,9 @@ button.a-button[data-type="secondary"]:hover {
 .m-basicModalContent__body {
   background: var(--bg-color) !important;
 }
-.o-magazineListItem:not(:last-of-type) {
+/* .o-magazineListItem:not(:last-of-type) {
   border-bottom: 1px solid var(--sub-text-color) !important;
-}
+} */
 .o-magazineListItem:last-of-type {
   border-bottom: none
 }
@@ -1938,4 +1938,75 @@ button.a-button[data-type="secondary"]:hover {
 .o-timelineHome__item--insert,
 .o-talkNote {
   background: var(--bg-color) !important; 
+}
+
+/*******************************/
+.o-magazineList__header,
+.m-purchase-history-item:hover,
+.ns-note .renewal-p-notificationList__itemInner>a:hover,
+.m-submenu__category:before,
+.o-notFoundMuseum__body,
+.ns-note .p-dropNavigation__item--all:before,
+.ns-note .p-globalNavigation__category,
+.ns-note .p-globalNavigation__category:before {
+  background: var(--bg-color) !important;  
+}
+
+.p-article__warning,
+.m-settings-navigation,
+.o-purchase-history__list,
+.swiper-button-disabled,
+.swiper-button-disabled[data-v-b12ad082] {
+  background: var(--sub-bg-color) !important;  
+}
+
+.m-odaiCard {
+  background: var(--main-color-dark) !important;  
+} 
+
+.m-settings-navigation,
+.a-select__field,
+.m-contestsCard__postCount,
+.m-contestsCard__postCountLink,
+.o-contests__columnTitle {
+  color: var(--text-color) !important;
+}
+
+.p-article__warning__message,
+.o-magazineList__title,
+.o-timelineNoteCardHeader__date,
+.m-purchase-history-item__title,
+.m-purchase-history-item__status,
+.o-magazineList__icon,
+.o-sidebarContests__header__readAll,
+.m-contestsCard__period,
+.m-sidebarSmallLinks__link,
+.m-carouselItem__description,
+.m-carouselGroup__seeAllLink,
+.o-circleIndex__faqLink,
+.o-magazineItemWithNotes__description,
+.p-category__anchorLink,
+.p-help__subTitle,
+.o-notFoundMuseum__description,
+.o-notFoundMuseum__slideHelp,
+.o-notFoundMuseum__slideCreator,
+.o-magazineEditor__total,
+.ns-note .p-globalNavigation__categoryItem,
+.p-terms__history {
+  color: var(--sub-text-color) !important;
+}
+
+.m-settings-navigation,
+.o-purchase-history__list {
+  border: 1px solid var(--sub-text-color) !important;
+}
+
+@media only screen and (min-width: 769px) {
+  .m-notificationListItem:hover  {
+    background: var(--bg-color) !important;  
+  }
+  .m-sidebarSmallLinks__link:hover,
+  .swiper-next:hover {
+    color: var(--text-color) !important;
+  }
 }

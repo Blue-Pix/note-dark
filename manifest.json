@@ -1,10 +1,10 @@
 {
   "name": "note-dark",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "manifest_version": 2,
-  "description": "Dark mode for note.mu",
+  "description": "Dark mode for note.com",
   "permissions": [
-    "*://note.mu/*"
+    "*://note.com/*"
   ],
   "web_accessible_resources": [
     "images/*",
