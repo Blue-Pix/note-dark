@@ -1948,7 +1948,11 @@ button.a-button[data-type="secondary"]:hover {
 .o-notFoundMuseum__body,
 .ns-note .p-dropNavigation__item--all:before,
 .ns-note .p-globalNavigation__category,
-.ns-note .p-globalNavigation__category:before {
+.ns-note .p-globalNavigation__category:before,
+.o-statsContent__overviewItem--type_comment,
+.o-statsContent__overviewItem,
+.o-magazineMenu__inner,
+.o-magazineMenu__nav:before {
   background: var(--bg-color) !important;  
 }
 
@@ -1956,7 +1960,19 @@ button.a-button[data-type="secondary"]:hover {
 .m-settings-navigation,
 .o-purchase-history__list,
 .swiper-button-disabled,
-.swiper-button-disabled[data-v-b12ad082] {
+.swiper-button-disabled,
+.o-statsContent__mainInner,
+.o-onboarding,
+.o-noteTips,
+.o-noteTips__books,
+.p-salesManage,
+.o-transferHistory,
+.o-statsContent__table thead,
+.o-transferHistory__table thead,
+.o-purchasers,
+.o-magazineItemWithNotes__body,
+.o-magazineItemWithNotes__body:after,
+.o-magazineItemWithNotes__body:before {
   background: var(--sub-bg-color) !important;  
 }
 
@@ -1968,7 +1984,8 @@ button.a-button[data-type="secondary"]:hover {
 .a-select__field,
 .m-contestsCard__postCount,
 .m-contestsCard__postCountLink,
-.o-contests__columnTitle {
+.o-contests__columnTitle,
+.o-magazineMenu__navLink {
   color: var(--text-color) !important;
 }
 
@@ -1992,12 +2009,23 @@ button.a-button[data-type="secondary"]:hover {
 .o-notFoundMuseum__slideCreator,
 .o-magazineEditor__total,
 .ns-note .p-globalNavigation__categoryItem,
-.p-terms__history {
+.p-terms__history,
+.o-statsContent__overviewItem--type_comment,
+.o-statsContent__notesListUpdatetime,
+.o-statsContent__table thead .o-statsContent__tableStat--type_comment,
+.o-statsContent__table tbody .o-statsContent__tableStat--type_comment,
+.o-onboarding__itemDescription,
+.o-noteTips__subTitle,
+.o-salesUnpaid__transferDescription,
+.o-transferHistory__description {
   color: var(--sub-text-color) !important;
 }
 
 .m-settings-navigation,
-.o-purchase-history__list {
+.o-purchase-history__list,
+.o-magazineItemWithNotes__body,
+.o-magazineItemWithNotes__body:after,
+.o-magazineItemWithNotes__body:before {
   border: 1px solid var(--sub-text-color) !important;
 }
 
@@ -2008,5 +2036,8 @@ button.a-button[data-type="secondary"]:hover {
   .m-sidebarSmallLinks__link:hover,
   .swiper-next:hover {
     color: var(--text-color) !important;
+  }
+  .o-settingHeader__link:hover {
+    color: var(--main-color) !important;
   }
 }
