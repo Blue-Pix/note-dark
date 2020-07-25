@@ -1955,7 +1955,9 @@ button.a-button[data-type="secondary"]:hover {
 .o-magazineMenu__nav:before,
 .m-paywallMessage__inner:before,
 .o-purchaseOneshotContent__item--target,
-.o-noteContentTalk__body:before {
+.o-noteContentTalk__body:before,
+.o-afterPurchaseMessageModal__message,
+.o-afterPurchaseMessageModal__message:before {
   background: var(--bg-color) !important;  
 }
 
@@ -1979,6 +1981,7 @@ button.a-button[data-type="secondary"]:hover {
 .t-settings {
   background: var(--sub-bg-color) !important;  
 }
+
 
 .m-odaiCard {
   background: var(--main-color-dark) !important;  
@@ -2030,7 +2033,8 @@ button.a-button[data-type="secondary"]:hover {
 .o-purchase-history__list,
 .o-magazineItemWithNotes__body,
 .o-magazineItemWithNotes__body:after,
-.o-magazineItemWithNotes__body:before {
+.o-magazineItemWithNotes__body:before,
+.o-afterPurchaseMessageModal__message {
   border: 1px solid var(--sub-text-color) !important;
 }
 
@@ -2045,6 +2049,10 @@ button.a-button[data-type="secondary"]:hover {
 .o-noteContentTalk__body:before {
   border-right: 2px solid var(--sub-text-color) !important;
   border-bottom: 2px solid var(--sub-text-color) !important;
+}
+
+.o-afterPurchaseMessageModal__message:before {
+  box-shadow: 1px 1px 0 0 var(--sub-text-color) !important;
 }
 
 @media only screen and (min-width: 769px) {
