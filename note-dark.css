@@ -180,7 +180,6 @@ button.a-button[data-type="secondary"]:hover {
 .o-sidebarPickupNotes  .m-noteListItem__name {
   color: var(--sub-text-color) !important;
 }
-.o-timeline__item,
 .m-noteListItem__border--bottom {
   border-bottom: 1px solid var(--sub-text-color) !important;
 }
@@ -1957,7 +1956,11 @@ button.a-button[data-type="secondary"]:hover {
 .o-purchaseOneshotContent__item--target,
 .o-noteContentTalk__body:before,
 .o-afterPurchaseMessageModal__message,
-.o-afterPurchaseMessageModal__message:before {
+.o-afterPurchaseMessageModal__message:before,
+.o-soundNote,
+.o-timelineSoundNoteCard__main,
+.o-timeline.o-timeline--recommend .o-gridNote__card .o-textNote,
+.o-noteReview__title {
   background: var(--bg-color) !important;  
 }
 
@@ -1978,7 +1981,12 @@ button.a-button[data-type="secondary"]:hover {
 .o-magazineItemWithNotes__body,
 .o-magazineItemWithNotes__body:after,
 .o-magazineItemWithNotes__body:before,
-.t-settings {
+.t-settings,
+.o-timelineSoundNoteCard__player,
+.o-thanksMessage,
+.o-timeline.o-timeline--recommend .o-gridNote__card:hover:before,
+.o-magazineContent .o-gridNote__card:hover:before,
+.o-circlePost__post {
   background: var(--sub-bg-color) !important;  
 }
 
@@ -1986,6 +1994,10 @@ button.a-button[data-type="secondary"]:hover {
 .m-odaiCard {
   background: var(--main-color-dark) !important;  
 } 
+
+.o-userReviewedNotes:after {
+  background: none !important;
+}
 
 .m-settings-navigation,
 .a-select__field,
@@ -2025,7 +2037,13 @@ button.a-button[data-type="secondary"]:hover {
 .o-noteTips__subTitle,
 .o-salesUnpaid__transferDescription,
 .o-transferHistory__description,
-.o-magazineDescription__name {
+.o-magazineDescription__name,
+.o-userReviewedNotes__title,
+.o-userReviewedNotes__recommender,
+.m-noteCard__description,
+.o-sidebarPickupNotes__header__readAll,
+.o-circleBoardCreator__infoSub,
+.o-circleBoardCreator__infoSub {
   color: var(--sub-text-color) !important;
 }
 
@@ -2034,7 +2052,9 @@ button.a-button[data-type="secondary"]:hover {
 .o-magazineItemWithNotes__body,
 .o-magazineItemWithNotes__body:after,
 .o-magazineItemWithNotes__body:before,
-.o-afterPurchaseMessageModal__message {
+.o-afterPurchaseMessageModal__message,
+.o-timelineSoundNoteCard__main,
+.o-timelineSoundNoteCard__player {
   border: 1px solid var(--sub-text-color) !important;
 }
 
@@ -2055,11 +2075,17 @@ button.a-button[data-type="secondary"]:hover {
   box-shadow: 1px 1px 0 0 var(--sub-text-color) !important;
 }
 
+.o-timeline.o-timeline--recommend .o-gridNote__card,
+.o-magazineContent .o-gridNote__card {
+  border: none !important;
+}
+
 @media only screen and (min-width: 769px) {
   .m-notificationListItem:hover  {
     background: var(--bg-color) !important;
   }
-  .o-talkNote:hover:before {
+  .o-talkNote:hover:before,
+  .o-soundNote:hover:before {
     background: var(--sub-bg-color) !important;
   }
   .m-sidebarSmallLinks__link:hover,
