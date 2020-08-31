@@ -1,5 +1,5 @@
 # note-dark
-the third-party [chrome extension](https://chrome.google.com/webstore/detail/ndjhheglhimmpjbgedbacgmloigpicng/publish-accepted?authuser=1&hl=ja) to apply dark mode style for https://note.com.
+the third-party [chrome extension](https://chrome.google.com/webstore/detail/ndjhheglhimmpjbgedbacgmloigpicng/) to apply dark mode style for https://note.com.
 
 ![note mu_ (2)](https://user-images.githubusercontent.com/34824697/67157555-88df6180-f368-11e9-96f1-ce3cfc370688.png)
 
