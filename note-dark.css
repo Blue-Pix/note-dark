@@ -1132,8 +1132,7 @@ button.a-button[data-type="secondary"]:hover {
 .o-creatorProfile__edit--list {
   color: var(--sub-text-color) !important;
 }
-.o-creatorMenu--bottomBorder,
-.o-timelineHome__item {
+.o-creatorMenu--bottomBorder {
   border-bottom: 1px solid var(--sub-text-color) !important;
 }
 .o-creatorMenu__inner,
@@ -1141,7 +1140,6 @@ button.a-button[data-type="secondary"]:hover {
 .o-creatorProfile__editSeparateTitle {
   border-top: 1px solid var(--sub-text-color) !important;
 }
-.o-gridNote__card,
 .o-magazineCreateCard__button,
 .m-archiveList__section {
   border: 1px solid var(--blue-gray) !important;
@@ -1151,7 +1149,6 @@ button.a-button[data-type="secondary"]:hover {
 .o-creatorMenu__optionLink:hover {
   border-bottom: 2px solid var(--text-color) !important;
 }
-.o-gridNote__card:hover,
 .o-magazineCreateCard__button:hover {
   border: 1px solid var(--gray) !important;
 }
@@ -1959,16 +1956,15 @@ button.a-button[data-type="secondary"]:hover {
 .o-afterPurchaseMessageModal__message:before,
 .o-soundNote,
 .o-timelineSoundNoteCard__main,
-.o-timeline.o-timeline--recommend .o-gridNote__card .o-textNote,
-.o-noteReview__title {
+.o-noteReview__title,
+.o-navbarMenu__helpPopup,
+.m-carouselItem__body {
   background: var(--bg-color) !important;  
 }
 
 .p-article__warning,
 .m-settings-navigation,
 .o-purchase-history__list,
-.swiper-button-disabled,
-.swiper-button-disabled,
 .o-statsContent__mainInner,
 .o-onboarding,
 .o-noteTips,
@@ -1984,9 +1980,11 @@ button.a-button[data-type="secondary"]:hover {
 .t-settings,
 .o-timelineSoundNoteCard__player,
 .o-thanksMessage,
-.o-timeline.o-timeline--recommend .o-gridNote__card:hover:before,
-.o-magazineContent .o-gridNote__card:hover:before,
-.o-circlePost__post {
+.o-circlePost__post,
+.o-navbar__body--type_official,
+.o-mediaItemWithNotes,
+.o-mediaItemWithNotes:after, 
+.o-mediaItemWithNotes:before {
   background: var(--sub-bg-color) !important;  
 }
 
@@ -2043,7 +2041,18 @@ button.a-button[data-type="secondary"]:hover {
 .m-noteCard__description,
 .o-sidebarPickupNotes__header__readAll,
 .o-circleBoardCreator__infoSub,
-.o-circleBoardCreator__infoSub {
+.o-circleBoardCreator__infoSub,
+.o-timelineNotificationMessages__link,
+.o-textNote__message,
+.o-navbarMenu__helpPopupLink,
+.m-indexItem__description,
+.m-breadcrumb__link,
+.m-sectionBody__more,
+.o-creatorQrCodeModal__exampleNotes,
+.o-magazineItemWithNotes__avatarName,
+.o-mediaItemWithNotes,
+.o-mediaItemWithNotes__articlesLink,
+.o-commentArea__alertLabel {
   color: var(--sub-text-color) !important;
 }
 
@@ -2054,7 +2063,11 @@ button.a-button[data-type="secondary"]:hover {
 .o-magazineItemWithNotes__body:before,
 .o-afterPurchaseMessageModal__message,
 .o-timelineSoundNoteCard__main,
-.o-timelineSoundNoteCard__player {
+.o-timelineSoundNoteCard__player,
+.o-navbarMenu__helpPopup,
+.o-mediaItemWithNotes,
+.o-mediaItemWithNotes:after, 
+.o-mediaItemWithNotes:before {
   border: 1px solid var(--sub-text-color) !important;
 }
 
@@ -2071,13 +2084,14 @@ button.a-button[data-type="secondary"]:hover {
   border-bottom: 2px solid var(--sub-text-color) !important;
 }
 
-.o-afterPurchaseMessageModal__message:before {
-  box-shadow: 1px 1px 0 0 var(--sub-text-color) !important;
+.o-navbarMenu__helpPopup:before {
+  background-color: var(--bg-color) !important;
+  border-right: 1px solid var(--sub-text-color) !important;
+  border-bottom: 1px solid var(--sub-text-color) !important;
 }
 
-.o-timeline.o-timeline--recommend .o-gridNote__card,
-.o-magazineContent .o-gridNote__card {
-  border: none !important;
+.o-afterPurchaseMessageModal__message:before {
+  box-shadow: 1px 1px 0 0 var(--sub-text-color) !important;
 }
 
 @media only screen and (min-width: 769px) {
@@ -2095,4 +2109,14 @@ button.a-button[data-type="secondary"]:hover {
   .o-settingHeader__link:hover {
     color: var(--main-color) !important;
   }
+}
+
+.o-gridNote__card:hover,
+.o-gridNote__card:hover:before {
+  background: var(--sub-bg-color) !important;
+  background-color: var(--sub-bg-color) !important;
+}
+.o-gridNote__card:hover .o-textNote {
+  background: var(--sub-bg-color) !important;
+  background-color: var(--sub-bg-color) !important;
 }
